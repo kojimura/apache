@@ -12,5 +12,5 @@ Usage:
 Plot grash from alog.tsv for Apache access by hour  
 
 Usage:  
-```python3 ./aplot.py```
+`python3 ./aplot.py`
 
