@@ -5,7 +5,7 @@
 ### alog.pl 
 Convert Apache log to tab-delimiter CSV
 
-Usage:
+Usage:  
 ```./alog.pl < access_log > alog.tsv```
 
 ### aplot.py
