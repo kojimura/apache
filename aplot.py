@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
+# plot graph for appache log: number of access by hour
+# input: access_log
+# outout: aplot.png
+# usage ./aplot.png 
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-df = pd.read_csv('alog.tsv', sep='\t', header=None,
-                 names=['ip', 'datetime', 'method', 'status', 'size', 'referer', 'url'])
+df = pd.read_csv('alog.tsv', sep='\t', header=None, names=['ip', 'datetime', 'method', 'status', 'size', 'referer', 'url'])
 
 # convert date (12/Nov/2023:09:42:45 +0900)
-df['datetime'] = df['datetime'].apply(
-    lambda x: datetime.strptime(x.split()[0], "%d/%b/%Y:%H:%M:%S"))
+df['datetime'] = df['datetime'].apply(lambda x: datetime.strptime(x.split()[0], "%d/%b/%Y:%H:%M:%S"))
 
 # round time by 1h (2023-11-12 09:00:00)
 df['hour'] = df['datetime'].dt.floor('H')
