@@ -11,7 +11,7 @@
 # LogFormat:
 # pattern1:combined
 # "%a %D %u %t \"%r\" %>s %b \"{Referer}i\" \"%{User-Agent}i\" \"-\J"" combined
-#191.8.11.160 - - [12/Nov/2023:14:04:13 +0900] "GET /wp-content HTTP/1.0" 200 5021 "http://foo.com/home.htm" "Mozilla/5.0 (Windows NT 5.01; as-IN; rv:1.9.0.20) Gecko/2021-01-10 16:56:07 Firefox/14.0"
+#127.0.0.1 - - [12/Nov/2021:14:04:13 +0900] "GET /wp-content HTTP/1.0" 200 5021 "http://foo.com/home.htm" "Mozilla/5.0 (Windows NT 5.01; as-IN; rv:1.9.0.20) Gecko/2021-01-10 16:56:07 Firefox/14.0"
 #
 # pattern1:common
 # "%h %l %u %t \"%r\" %>s %b" common
